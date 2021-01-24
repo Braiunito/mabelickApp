@@ -1,0 +1,15 @@
+name: flipsimply2
+recipe: lamp
+config:
+  webroot: ./public
+services:
+   database:
+           type: postgres:10
+           portforward: 5901 
+           creds:
+                database: database
+                # Note that you cannot change the below but they are shown here for transparency
+                # You can read more about why this is below
+                # By "NO PASSWORD" we mean the password is blank
+                user: postgres
+                password: NO PASSWORD
