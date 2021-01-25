@@ -23,7 +23,6 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
@@ -55,8 +54,11 @@ Encore
     })
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
-
+    .enableSassLoader()
+    .copyFiles({
+    	from: "./assets/images",
+    	to: "images/[path][name].[ext]",
+    });
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 

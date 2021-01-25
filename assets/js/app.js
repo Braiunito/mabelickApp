@@ -1,8 +1,15 @@
 import "../scss/global.scss";
-import Vue from 'vue';
-import App from './components/App';
+import { createApp } from 'vue';
+import App from './pages/App';
 
-const app = new Vue({
-    el: '#app',
-    render: h => h(App)
+require('bootstrap');
+const delimiters = ["[[", "]]"];
+
+const AppMain = createApp({
+    delimiters,
+    components: {
+	App
+    }
 });
+
+AppMain.mount("#app");

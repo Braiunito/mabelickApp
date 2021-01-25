@@ -1,0 +1,11 @@
+body {
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    background-color: $color_primary_dark;
+}
+
+a:hover, a {
+    color: initial;
+    text-decoration: unset;
+}

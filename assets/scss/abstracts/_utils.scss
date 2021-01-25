@@ -1,0 +1,39 @@
+/* Text */
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-thin {
+    font-weight: 200;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.text-contrast {
+    color: $color_contrast;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+/* Aligns */
+.center-row, .center-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-col {
+    flex-direction: column;
+}

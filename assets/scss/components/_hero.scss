@@ -1,0 +1,9 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_secondary;
+    height: 195px;
+    color: $color_contrast;
+}
