@@ -2,7 +2,7 @@ body[search=true] {
     #search {
         flex: 1;
     }
-    .home___options__left {
+    .app___options__left {
         display: none !important;
     }
 }
@@ -35,6 +35,10 @@ body[search=true] {
         @extend .circle;
         background: $color_dark;
      }
+     &--gray {
+         @extend .circle;
+         background: gray;
+      }
     &--cian {
         @extend .circle;
         background: $color_cian;
@@ -60,6 +64,17 @@ body[search=true] {
 
 .home__options #search:focus .home__options__left {
     display: none;
+}
+
+.code {
+    @extend .text-regular;
+    @extend .center-row;
+    margin-right: 5px;
+    color: $color_contrast;
+    border-radius: 7px;
+    background-color: $color_secondary;
+    width: 79px;
+    height: 29px;
 }
 
 .card {

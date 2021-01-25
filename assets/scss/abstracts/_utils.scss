@@ -3,6 +3,10 @@
     text-transform: uppercase;
 }
 
+.text-tiny {
+    font-size: 1rem !important;
+}
+
 .text-thin {
     font-weight: 200;
 }
@@ -23,6 +27,14 @@
     color: $color_contrast;
 }
 
+.text-dark {
+    color: $color_dark;
+}
+
+.text-darklight {
+    color: $color_light;
+}
+
 span {
     font-size: 1.5rem;
 }
@@ -36,4 +48,14 @@ span {
 
 .center-col {
     flex-direction: column;
+}
+
+/* Mockups */
+.Mockup {
+    background-color:gray;
+    &--text {
+        @extend .Mockup;
+        width:70%; 
+        height: 30px; 
+    }
 }

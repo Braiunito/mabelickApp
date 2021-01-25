@@ -1,6 +1,7 @@
 import "../scss/global.scss";
 import { createApp } from 'vue';
-import App from './pages/App';
+import App from './views/App';
+import router from './router';
 
 require('bootstrap');
 const delimiters = ["[[", "]]"];
@@ -8,8 +9,9 @@ const delimiters = ["[[", "]]"];
 const AppMain = createApp({
     delimiters,
     components: {
-	App
+	    App
     }
 });
 
+AppMain.use(router);
 AppMain.mount("#app");
